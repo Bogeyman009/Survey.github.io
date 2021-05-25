@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital@1&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="project 2.css">
+</head>
+<body>
+	<div class="container" id="head">
+		<form id="survey-form" action="/my-handling-form-page" method="post">
+		<p class="heading">Appication for permission to date me.</p>
+		<p class="note"><u>Note:</u> This is applicable for the individual who is above 18 year...</p>
+		<fieldset class="top">
+			<legend>Personal Detail</legend>
+			<label for="name">NAME</label>
+			<input type="text" id="data" placeholder="Name"><br>
+			<label for="date of Birth"x>DOB</label>
+			<input type="date" name="date" id="data" placeholder="date"><br>
+			<label for="address" >ADDRESS</label>
+			<input type="text" name="address" id="data" placeholder="address"><br>
+			<label for="Email">E-MAIL</label>
+			<input type="email" placeholder="email" id="data"><br>
+			<label for="number">CONTACT</label>
+			<input type="number" name="number" id="data" placeholder="Mobile number"><br>
+			<div>
+			<label for="gender">GENDER</label><br>
+			<label for="male" id="male">MALE</label>
+			<input type="radio" name="gender" id="male" id="data" checked="">
+			<label for="female" id="female">FEMALE</label>
+			<input type="radio" name="gender" id="female " id="data"><br>
+		</div>
+		<div id="dateprop">
+			<label >Date Of Meeting Proposed</label>
+			<input type="date" style="margin-left: 230px" name="date" id="data">
+		</div>
+	</fieldset>
+		<fieldset id="check-detail">
+			<p><strong>Check all That Apply:</strong></p>
+			<input id="check" type="checkbox" name="qualification">Work full time ....<br>
+			<input type="checkbox" id="check" name="tattoos">Have Tattoos ....<br>
+			<input type="checkbox" name="car" id="check">Own Car ....<br>
+			<input id="check" type="checkbox" name="wealth">Rich Parrent ....<br>
+			<input type="checkbox" id="check" name="laction">Public place meeting is ok ....<br>
+			<textarea for="suggestion" id="check" placeholder="Suggestion"></textarea>
+
+		</fieldset>
+		<br>
+		<div  id="opinion">
+		<fieldset>
+			<div class="row">
+				<div class="col-6">
+			<p>Political persuasion</p>
+			<select>
+				<option name="right-wing">Right-wing</option>
+				<option name="Left-wing">Left-wing</option>
+				<option name="nutral">Neutral</option>
+				<option name="no-opinion">No Opinion</option>
+			</select>
+		</div>
+		<div class="col-6">
+			<p>Education Level completed</p>
+			<select>
+				
+				<option name="high-school">High School</option>
+				<option name="graduated">Graduated</option>
+				<option name="masters">Masters</option>
+
+			</select>
+		</div>
+		</div>
+		</fieldset>
+	</div>
+	<br>
+	<div class="attachent">
+		<p>Uplaod the Required documents....</p>
+		<span>Image</span> <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+		<span>Education Details ..(.pdf format)	</span> <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+	
+	</div>
+	<br>
+	<div class="submit">
+	<button type="submit">Submit</button>
+	</div>
+	</form>
+</div>
+
+</body>
+</html>
